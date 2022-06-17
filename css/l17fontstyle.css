@@ -1,0 +1,151 @@
+/**universal selector
+*/
+
+/**{
+	cursor: pointer;
+}*/
+/*1.i local font integrate*/
+
+/*.p1{
+	font-family: Arial;
+}
+
+
+/*.body{
+	font-family: Arial;
+}
+*/
+
+/*.p2{
+	font-family: Century,Arial,"Time New Rorem";
+}
+
+*/
+
+/*2.global font integrate*/
+
+
+/*body{
+	font-family: 'Stick', sans-serif;;
+}*/
+
+/*.p1{
+	font-family: Stick;
+}
+
+.p2{
+	font-family:'Stick', sans-serif;;
+}
+
+.p3{
+	font-family: 'Akaya Kanadaka', cursive;
+}*/
+
+/*ii project folder intergate*/
+
+/*at-rules*/
+/*for stick fontfamily*/
+@font-face{
+	font-family: Stick;
+	src:local('Stick-Regular'), url('../libs/fonts/stick/Stick-Regular.ttf') format('woff');
+}
+
+
+/*for stick akaya*/
+@font-face{
+	font-family: abc;
+	src:local('AkayaTelivigala-Regular.ttf'), url('../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf') format('woff');
+}
+
+
+/*body{
+	font-family:'Stick', sans-serif;;
+}
+
+
+*/
+
+.p1{
+	font-family: Stick;
+}
+
+.p2,.p3{
+	font-family: abc;
+}
+
+.p4{
+	font-family: Arial,Century;
+	/*font-weight: bold;*/
+	font-weight: bolder;
+					/*100-900*/
+	/*font-weight: 600;*/
+	/*font-style: italic;*/
+
+	/*text-transform: uppercase;*/
+/*	text-transform: lowercase;*/
+	text-transform: capitalize;
+	text-indent: 50px;
+
+}
+.clickme{
+	text-decoration: none;
+}
+
+.clickme:visited{
+	color: red;
+}
+
+.clickme:hover{
+	color: red;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.menutext{
+	font-family: Cambria;
+	text-decoration: none;
+	background: green;
+	color: red;
+		/*top-bottom  left-right*/
+/*padding: 10px       30px;*/
+			 /*top  right bottom left*/
+	/*padding: 10px 20px  30px  40px;*/
+
+/*other way*/
+	padding-top:10px;
+	padding-bottom:20px;
+	padding-left:30px;
+	padding-right:40px;
+
+	/*1s=1000ms*/
+/*1ms........500ms.........1000ms(1s)*/
+
+	/*transition: all 1s;*/
+
+	transition: background-color 5s;
+	/*transition: background-color 2s,color 5s ;*/
+}
+
+.menutext:hover{
+	background: blue;
+	color:black ;
+}
+
+
+.imgdesign{
+	width: 80px;
+	height: 80px;
+
+	cursor: pointer;
+	transition: all 1s;
+}
+
+
+.imgdesign:hover{
+	width: 100px;
+	height: 100px;
+}
+
+
+
+

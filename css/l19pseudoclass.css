@@ -1,0 +1,109 @@
+/*Pseudo class*/
+
+
+.div1{
+	width: 300px;
+	height: 200px;
+	background: green;
+
+}
+
+.div1:first-child{
+	background: red;
+	color: #fff;
+	border-radius: 20px;
+}
+
+
+.div1:first-of-type{
+	background: blue;
+	color: #fff;
+}
+
+.div1:last-child{
+	background: gray;
+}
+
+.div1:last-of-type{
+	background: gray;
+	color: #fff;
+	border-radius: 20px;
+}
+
+.div1:nth-child(3){
+	border-color: orange;
+	color: red;
+}
+
+.div1:nth-of-type(3){
+	border-color: orange;
+	color: red;
+}
+
+.div1:nth-child(odd){
+	background: yellow;
+	color: blue;
+}
+
+.div1:nth-child(even){
+	background: red;
+	color: black;
+}
+
+.div1:nth-of-type(odd){
+	background: blue;
+	color: black;
+}
+
+.div1:nth-of-type(even){
+	background: blue;
+	color: red;
+}
+
+/*.div1:hover{
+	cursor: pointer;
+	background-color: orange;
+}ရှင်းပြတာ*/
+
+/*ordinal number*/
+/*1st,2nd,3rd...nth
+*/
+
+/*16.2*/
+
+/*child vs type*/
+
+/*.div1:first-child{
+	color: red;
+	background: gray;
+	border: 20px;
+} */
+
+/*.div1:last-of-type{
+	color: red;
+	background: gray;
+	border: 20px;
+}*/
+
+
+/*.div1:nth-child(odd){
+	color: red;
+	background: green;
+	border: 20px;
+}*/
+
+/*.div1:nth-of-type(odd){
+	color: red;
+	background: gray;
+	border: 20px;
+}*/
+
+
+
+
+
+
+
+
+
+

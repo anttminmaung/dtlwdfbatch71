@@ -1,0 +1,131 @@
+/*div span{
+	color: red;
+}*/
+
+
+
+/*multi tag to tag*/
+/*div span p{
+	color: red;
+}*/
+
+/*tag to class*/
+
+/*div .address{
+	color: red;
+}
+*/
+
+/*multi tag to class*/
+
+/*div span .address{
+	color: red;
+}*/
+
+/*multi tag to sameclass*/
+/*div span small.name{
+	color: red;
+}
+*/
+
+/*Class to Class
+
+.money .currency{
+	color: red;
+}*/
+
+/*
+Multi Class to Class
+
+.bank .money .currency{
+	color: red;
+}
+*/
+
+/*Class to Tag*/
+/*.container p{
+	color: red;
+}
+
+
+Class to Multi Tags
+.container b span{
+	color: red;
+}*/
+
+
+
+/*same class*/
+/*.mobile.jpn{
+	color: yellow;
+}
+
+.mobile.cn{
+	color: red;
+}
+
+.mobile.us{
+	color: blue;
+}*/
+
+
+/*class to same class*/
+
+/*.vehical .car.jpn{
+	color: red;
+}
+
+.vehical .car.cn{
+	color: red;
+}
+
+.vehical .car.indo{
+	color: green;
+}*/
+
+/*class to tag by groupselector*/
+
+/*.div1 p,.div1 b{
+	color: red;
+}
+*/
+
+/*child selector*/
+
+/*.div2 > p{
+	color: red;
+}
+
+*/
+
+/*sibiling selector (2types)
+1.general sibiling selector(~)
+
+*/
+
+/*.div4 ~ b{
+	color: red;
+}
+*/
+/*2.adjecent sibiling selector*/
+
+/*.div7 + p{
+	color: red;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

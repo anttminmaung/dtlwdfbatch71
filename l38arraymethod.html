@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>array method</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+	//array method
+
+	let arrcolors = ["red","black","orange","tomato","violet"];
+
+	console.log(arrcolors);
+	console.log(arrcolors.length);
+	console.log(arrcolors[3]);
+	console.log(arrcolors.indexOf("violet"));
+
+
+	//character array in js
+
+	let myfriend = "Aung kyaw kyaw";
+
+	console.log(Array.isArray(arrcolors));//result = true
+	console.log(Array.isArray(myfriend));//result=false
+	console.log(arrcolors);
+
+	console.log("Array to String by toString = " + arrcolors.toString());
+	console.log("Array to String by join = " + arrcolors.join("*"));
+
+	const n =["red","black","green","silver"];
+	console.log(n);
+
+	n[4] ="blue";
+	n[1] ="pink";
+
+	console.log(n);
+
+	//add new value to array (add to the end)
+
+	n.push("gold");
+	n.push("orange");
+	n.push("violet","white");
+	console.log(n);
+
+	// unshitကအရှေကနေ့ဝင်မယ်indexnumberက၀ကနေ့စမယ်
+
+	//add new value to array (addon to front)
+	n.unshift("tomato");
+	n.unshift("skyblue","grey");
+	console.log(n);
+
+
+	// n.shit ka data တွေကအရှေ့ကနေဖြတ်တယ်တခါရေးရင်တခေါက်ပြတ်တယ် value nae index number ko par remove tal
+
+	//remove value of index (take off from front)
+	n.shift();
+	n.shift();
+	console.log(n);
+
+	// n.pop ကလည်းvalue nae index number ko par remove talတခါရေးရင်တခေါက်ပြတ်တယ် အနောက်ကနေပြတ်တယ်
+
+	//remove value or index (take off from end)
+	n.pop();
+	n.pop();
+	console.log(n);
+
+	// delet ka value ပဲဖြတ်တယ် index number မပြတ်ဘူး
+
+	delete n[2];
+	console.log(n);
+	console.log(n.length);
+	console.log(n[2]);
+
+
+	// let q = n; အပေါ်ကအခန်း၈ခန်းထဲကနေ့၅ခန်းပဲလိုချင်ရင်
+	// splice(index,length(space))
+
+	let q = n.splice(1,5);
+	console.log(q);
+	console.log(q.length);
+
+	//Array combine
+		const arr1 = ["aung aung","zaw zaw","mg mg","kyaw kyaw"];
+		const arr2 =["su su","nu nu","yu yu","lu lu"];
+		const arr3 =[100,200,300,400];
+
+		console.log(arr1+arr2); //oki but changed to string
+
+		console.log(arr1.concat(arr2));
+		console.log(arr2.concat(arr1));
+		console.log(arr1.concat(arr1));
+		console.log(arr1.concat(arr3));
+
+	//array sorting
+
+	const arr4 = arr1.concat(arr2);
+	console.log(arr4);
+	console.log(arr4[3]);
+
+	//sort a to z (sort() doesn't work in number)
+	console.log(arr4.sort());
+	// console.log(arr4[3]);
+
+	// sort z to a
+	console.log(arr4.reverse());
+
+
+
+	const arr5 =[700,200,100,50,500,10,5,7,6,600];
+
+	console.log(arr5);
+	// console.log(arr5.sort());
+
+
+
+// 16.5
+
+
+
+
+console.log(arr5.sort(function(a,z){
+	// return a-z 
+	return z-a;
+}));
+
+console.log(arr5.sort(function(x,y){
+	// return x-y ငယ်စဉ်ကြီးလိုက်
+	 return y-x; //ကြီးစဉ်ငယ်လိုက်
+}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

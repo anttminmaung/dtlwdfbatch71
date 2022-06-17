@@ -1,0 +1,71 @@
+h1{
+	color: gray;
+}
+
+
+/*group selector(,)*/
+
+h2,h3,h4{
+	color:red;
+}
+
+
+
+/*span{
+	color: red;
+}*/ /*အလိုဆိုအားလုံးပါမှာဆိုးလိုid koe use*/
+
+/*Id selector*/
+
+#myself,#mm{
+	color:yellow;        /*gp nae id    */
+}
+	
+
+#japu,span{
+	color: blue;
+}
+
+
+span{
+	color: gray;
+}
+
+/*class selector*/
+
+.ph{
+	color: red;
+}
+
+.phone{
+	font-size: 30px;
+}
+
+/*classကmultiple value ပေးရင်လုပ်ငန်းစဉ်နစ်ခုလုပ်ပေးတယ် */
+/*
+ph{
+	color: red;
+}
+
+.phone{
+	font-size: 30px;
+}
+
+
+
+*/
+
+
+.hay{
+	color: red;
+	font-size: 20px;
+}
+
+#hay{
+	color: green;
+	font-size: 20px;
+}
+
+div{
+	color: blue;
+}

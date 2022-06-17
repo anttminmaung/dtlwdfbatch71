@@ -1,0 +1,100 @@
+.firstdiv{
+	width: 300px;
+	height: 300px;
+	font-size: 20px;
+	color: gray;
+	/*background-color: red;
+	background-color: #32a852;*/
+	/*background-color: rgba(127,127,127,1.00);*/
+	background: url("./../img/cover/cr71.jpeg");
+	background-repeat: no-repeat;
+	/*background: blue;*/
+
+}
+
+/*.secdiv{
+	/*color: blue;*/
+	/*width: 300px;
+	height: 300px;*/
+	
+	/*font-size: 20px;
+	background-color: darkred;*/
+/*	background-image: url("./../img/cover/cr71.jpeg");*/
+/*background: url("./../img/cover/cr71.jpeg");*/
+/*
+	background-repeat:no-repeat ;*/
+	/*background-repeat:x-repeat ;
+	background-repeat:y-repeat ;
+*/
+	/*background-position: center;*/
+	/*border: 1px solid green;
+	color: white;*/
+/*}*/
+
+.thidiv{
+	width: 300px;
+	height: 300px;
+	border: 2px solid green;
+	color: green;
+
+	background: linear-gradient(red,orange,blue);
+
+	/*background: linear-gradient(#fcba03,#031cfc);*/
+/*
+	background: linear-gradient(rgba(214, 46, 127, 1.0),rgba(45, 215, 127,1.00));*/
+
+
+	background: linear-gradient(
+		red,
+		#fcba03,
+		rgba(214, 46, 127,1.00)
+
+
+
+	);
+
+	/*background: radial-gradient(red,orange);*/
+	background: radial-gradient(
+		red,
+		orange,
+		blue,
+		green);
+}
+
+.divfour{
+	width: 300px;
+	height: 300px;
+	border: 2px solid green;
+
+	/*background-image: linear-gradient(
+		-45deg,
+		rgba(220,124,127,0),
+		rgba(214,74,127,0.5)),
+		url("../img/cover/cr7.jpeg");
+*/
+	/*background-repeat: no-repeat;
+
+	color: green;*/
+
+    background: linear-gradient(
+     	0deg,
+     	red,
+     	orange,
+     	blue);
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+

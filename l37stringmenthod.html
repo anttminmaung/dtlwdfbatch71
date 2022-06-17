@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String Menthod</title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+	// string menthod
+
+	let firstname = "Maung Maung";
+	let lastname  = "kyaw";
+	console.log(firstname);
+	console.log(lastname);
+	console.log(firstname.length);
+
+
+	//concat (string +)
+	let fullname = firstname+lastname;
+	console.log(fullname);
+
+
+	//append
+
+	firstname += lastname;
+
+	// firstname = lastname;
+
+
+	console.log(firstname);
+
+	// concat()
+
+	var fstname = "zayar";
+	var lstname  = "kyaw";
+	var myname = fstname.concat(lstname);
+
+	console.log(myname);
+
+	//charracter.array
+	console.log(myname.length);
+	console.log(myname[2]);
+
+	console.log(myname[myname.length-1]);//10-1
+										//9
+
+
+	//charat()
+	console.log(myname.charAt(2));//10-1
+									//9
+
+	console.log(myname.charAt(myname.length-1));
+
+	//includes()
+	let fav = "My fav color is black color";
+	console.log(fav);
+	//result = true
+
+	console.log(fav.includes("black"));
+	//result = false
+
+	console.log(fav.includes("red"));
+	//result = false
+
+	console.log(fav.includes("BLACK"));
+	//result = false
+
+	console.log(fav.includes("Black"));
+	//result = false
+
+	console.log(fav.includes("bla"));
+	//result = true
+
+
+	//replace(old,new)
+	console.log(fav.replace("black","blue"));
+	console.log(fav.replace("bla","red"));//redck
+	console.log(fav.replace("color","parpar"));//first color ကိုပဲပြောင်းမယ်
+
+
+	//substring(index,length)
+	console.log(fav.sustring(0,10)+"....");
+	console.log(fav.sustring(0,10).concat('......'));//concat နဲ့ပေါင်းနည်းနှစ်နည်း
+
+
+	
+	
+</script>
+</body>
+</html>

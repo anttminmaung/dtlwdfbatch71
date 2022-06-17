@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>looping</title>
+</head>
+<body>
+
+
+
+<script type="text/javascript">
+
+	// object တခုချင်းစီကိုအများကြီးမထုတ်ချင်ဘူးဆိုရင်
+	// တခါထုတ်တိုင်းစာရိုက်မထုတ်ချင်ဘူးဆိုရင်
+
+	// let obj = {
+	// 		name : "aung aung"
+	// 		age: 30
+	// 	};
+	let obj = {
+			name : "aung aung",
+			age: 30
+		};
+
+	console.log(obj);
+	console.log(obj.name);
+	console.log(obj.age);
+
+	let arr = ["red","green","black"];
+	console.log(arr);
+	console.log(arr[0]);
+	console.log(arr[1]);
+	console.log(arr[2]);
+
+	//1. for loop
+
+	//start end ince/dec??
+	// second statement  ကို သိချင်ရင်first statement ကိုကြည့်
+	// third statement ကို သိချင်ရင်first/ sec statement ကိုကြည့်
+
+	// for (statement1,statement2,statement3){
+	// 	code to excuted
+	// }
+	// incre/decreasement ကို သိချင်ရင်first statement မှာ 0 sec statement မှာ i < 10 ဆိုရင် 0ကနေတဖြည်းတဖြည်းနဲ့ တက်လာတဲ့ပုံစံအဲတာမို့လို့
+	// increase ကိုရွေးမယ်
+
+	let i = 0;
+
+	for(i; i < 10; i++){
+		console.log(i)
+	}
+
+	console.log("this is i value from outside =" + i);
+
+
+	for(var j=5; j<10; j++){
+
+		console.log('j value is =' + j);
+	}
+
+	console.log("this is i value from outside =" + j);
+
+
+		// resultt = 0 then error
+		// const k=0;
+		// for (k; k>10; k++){
+		// 	console.log('k value is =' +k);
+		// }
+
+		for(var m=0; m<=10;m++){
+			//console.log(m);
+
+			if(m === 5){
+				console.log("5 is my fav color");//သူကမှားတဲcondition တွေဆိုမပြဘူး တနည်းအားဖြင့် 5 နဲမညီရင်မထုတ်ပေးဘူး
+			}
+
+			console.log(m);//အဲဒီမှာ++ကconsole.log(m); printoutပြီးမှထုတ်မယ်
+		}
+
+		for(var n = 0; n < 10; n++){
+			console.log(n);
+
+			if(n === 2){
+				console.log( n + "is my fav number");
+				break;
+			}
+
+			// console.log(n);
+		}
+
+		console.log("this is n value from outside =" + n);
+
+		for(var q=0; q<10 ;q++){
+
+			if(q === 2){
+				console.log(q + "is my fav number");
+				continue;//သူကပြီးသွားတဲပုံစံ2ကိုထက်မထုတ်တော့ဘူးoperationကိုအစကနေပြန်စရမယ်
+			}
+
+			if(q === 5){
+				console.log(q + "is my fav number");
+				break;//သူကဖြတ်ထုတ်လိုက်တဲ့ပုံစံမပြီးသေးဘူးဆက်လုပ်မယ်
+			}
+
+
+			console.log(q);
+
+
+		}
+
+		console.log("this is q value from outside = " + q);
+
+		for(var s=10; s>= 0;s--){
+			console.log(s);
+		}
+		console.log("this is s value from outside =" + s);
+
+
+		
+
+		let myarrs=['red','green','black','orange','blue','grey'];
+	    // console.log(myarrs);
+	    //0 to 5
+	    //6
+	    //for(let w=0; w < 6; w++){
+
+	    //console.log(w);
+	    //console.log(myarray[w]);
+	    //}
+
+
+	    for(let w=0;w< myarrs.length;w++){
+		document.write(myarrs[w] +'<br/>');
+
+	}
+
+	// for loop with object
+	const peoples = [
+	{name:"aung aung",age:35},
+	{name:"su su",age:30},
+	{
+		name:"hla hla",age:35
+	}
+
+	];
+
+	console.log(peoples);
+	// console.log(peoples[2].name);
+
+	for(let j=0; j < peoples.length; j++){
+		console.log(j);
+		console.log(typeof j);
+		document.write("Name =" + peoples[j].name + "\/ Age =" + peoples[j].age + "<br/>")
+	}
+
+
+ // 2.for in loop (for object / array)
+
+ // for in loop statement 1 ku pal shi for object တွေအတွက်ပိုအဆင်ပြေတယ် object ထဲမှာkey နဲ့ value ရှီတယ် for in loop ka arry ko inherit ထားတယ် ထူတ်ရင်[]နဲ့ထူတ်ရတယ် object လို့ . ထူတ်လို့မရဘူး
+
+ //for(key in mainobject){
+ // 	console.log(key);
+ // } ပထမတကြီမ်ပတ်ရင် 
+
+
+
+ let students = {
+ 	name:"Aung Aung",
+ 	city:"Mandalay",
+ 	parent:"U BA"
+ }
+
+ //console.log(students);
+ // console.log(students.name);
+
+ for(key in students){
+ 	// console.log(key);
+ 	// console.log(typeof key);
+
+ 	// console.log(students);
+ 	// console.log(students.name);
+
+ 	// console.log(students[key]);
+
+ 	document.write(key + " = " + students[key] + "<br/>");
+
+
+ }
+
+
+// for in loop with arrray
+const ourteams = ["kyaw kyaw","aung aung","maung maug","tun tun","taung taung"];
+
+// console.log(ourteams);
+// console.log(ourteams[4]);
+
+for(idx in ourteams){
+	console.log(idx);
+	console.log(typeof idx);//string
+
+	console.log(ourteams);
+	document.write("for in loop result =" + ourteams[idx] + "<br/>");
+}
+
+// for in loop with string
+let bd = "happy birthday to you";
+console.log(bd);
+
+for(key in bd){
+	console.log(key);
+	document.write(bd[key] + "<br/>");
+}
+
+
+// 3.for Of loop (arry တွေအတွက်ပိုအဆင်ပြေတယ်)
+
+// for(value of array){
+// 	code to executed
+// }
+
+document.write("<h3>for Of loop</h3>");
+
+const members = ["su su","lu lu","nu nu","yu yu","mya mya"];
+console.log(members);
+console.log(members[3]);
+
+for (member of members){
+	console.log(member);
+
+	document.write("for of loop result =" + member +"<br/>");
+}
+
+
+let greeting = "hello may";
+console.log(greeting);
+
+for(val of greeting){
+	console.log(val);
+	document.write(val + "<br/>");
+}
+
+
+
+//.4 while loop 10.5
+
+document.write("<h2>whileloop</h2>");
+
+ // while(condition){
+ // 	//before printout
+ // 	//code to be executed
+ // 	//after printout
+ // }
+
+
+
+let b = 0;
+
+while(b < 10){
+	console.log("Number b value is =" + b);
+	b++;
+}
+
+console.log("b outside value is =" + b);
+
+var c = 0;
+
+while(c < 10){
+	c++;
+	console.log("Number c value is =" + c);
+}
+
+console.log("c outside value is =" + c);
+
+
+let mycolors = ["red","green","black","grey","blue","pink","gold"];
+console.log(mycolors);
+
+let k = 0;
+
+while(k < mycolors.length){
+	//console.log(k);
+	document.write(mycolors[k] + "<br/>");
+
+		k++;
+}
+
+let laptops = [
+  {
+  	cpu:"core i5",
+  	ram:"8gb",
+  	hdd:"1tb"
+
+   }
+];
+
+console.log(laptops);
+console.log(laptops[0].cpu);
+
+let d = 0;
+
+while(d < laptops.length){
+
+
+	// console.log(d);
+	document.write("cpu is =" + laptops[d].cpu + "<br/>" + "ram is =" + laptops[d].ram + "<br/>" + "hdd is =" + laptops[d].hdd + "<br/>" );
+
+	d++;
+}
+
+
+// 5.do while loop
+// do{
+// 	before printout (in/de)
+// 		code to be excuted **condition ko အရင်ဖြေရှင်းမယ် do while mar
+	// after printout (in/de)
+// }while(condition);
+
+document.write("<h3>Do while loop</h3>");
+
+
+let mm = 0;
+
+do{
+	console.log("MM result is =" + mm);
+	mm++;
+}while(mm < 10);
+
+console.log("MM out side value is =" + mm);
+
+let nn = 0;
+
+do{
+	nn++;
+	console.log("NN result is =" + nn);
+	
+}while(nn < 10);
+
+console.log("NN out side value is =" + nn);
+
+
+//6.forEach loop
+
+// mainarrays.forEach(function(value,index,array){
+// 	code to be executed
+
+// });
+
+document.write("<h3>forEach loop</h3>");
+
+let candycolors = ["red","green","orange","violet","black","white","blue"];
+// console.log(candycolors);
+
+candycolors.forEach(function(candycolors){
+	console.log(candycolors);
+
+});
+
+candycolors.forEach(function(candycolors,idx){
+	document.write("Index number is =" + idx + "Color is = " + candycolors + "<br/>");
+
+});
+
+candycolors.forEach(function(candycolors,idx,arr){
+	console.log(arr);
+
+});
+
+
+//7.map
+
+//mainarrays.map(function(){
+	// code to be executed
+// });
+
+document.write("<h3>Map loop</h3>");
+
+const visitors = ["ko sai","m zaw naw","june","aung aung","htet aung kyaw"];
+console.log(visitors);
+
+
+visitors.forEach(function(visitor){
+	console.log(`forEach result =Mr.${visitor}`);
+	console.log(visitor);
+
+});
+
+visitors.map(function(visitor){
+	console.log(`map result =Mr.${visitor}`);
+	console.log(visitor);
+
+});
+
+
+//16.5 function လိုမျိုး()ထည့်ရေးလိုမရဘူး
+
+const guys = visitors.map(function(name){
+	return `mr.${name}`;
+});
+
+console.log(guys); //array အပေါ်ကarray ကိုထူတ်ချင်ရင်သုံး
+
+
+const myguys = visitors.forEach(function(name){
+	return `mr.${name}`;
+});
+
+console.log(myguys); // undfined အောက်ကprintout တွက်သုံး
+
+
+
+const users = [
+{id:1 ,name:"aung aung"},
+{id:2 ,name:"su su"},
+{id:3 ,name:"mya mya"},
+
+];
+
+console.log(users[1].name);
+
+const getname = users.map(function(user){
+	return user.name;
+});
+
+console.log(getname);
+
+
+const printname = users.map(user=>user.name);
+console.log(printname);
+
+users.map((user,idx)=>{
+	document.write(`Idexs is ${idx} = ID is ${user.id} and Name is ${user.name}` + "<br/>");
+
+});
+
+const game = "Chess";
+const winners = ["mr.tin","mr.june","mrs.july"];
+
+const getresult = winners.map((winner,idx)=>({name:winner,sport:game,prize:idx+1}));
+
+console.log(getresult);
+console.log(typeof idx);
+
+
+
+
+// 8.filter
+document.write("<h3>filter loop</h3>");
+
+const ages = [20,25,21,17,11,18,19,21,23,24,56];
+console.log(ages);
+
+
+// const getove18 = ages.filter(age=>{
+// 	return age > 18;
+// });
+
+const getove18 = ages.filter(age=>age >= 18);
+	
+console.log(getove18);
+
+
+
+
+
+</script>
+</body>
+</html>
